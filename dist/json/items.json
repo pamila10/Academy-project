@@ -1,0 +1,42 @@
+[
+    {
+        "image": "./imgs/items/item1.jpg",
+        "text": "Hay - About A Lounge  Chair AAL 93",
+        "price": "$659.55"
+    },
+    {
+        "image": "./imgs/items/item2.jpg",
+        "text": "Activate Facial Mask and Charcoal Soap",
+        "price": "$ 129.55"
+    }
+    {
+        "image": "./imgs/items/item3.jpg",
+        "text": "Hay - About A Lounge  Chair AAL 93",
+        "price": "$659.55"
+    },
+    {
+        "image": "./imgs/items/item4.jpg",
+        "text": "Activate Facial Mask and Charcoal Soap",
+        "price": "$ 129.55"
+    }
+    {
+        "image": "./imgs/items/item2.jpg",
+        "text": "Hay - About A Lounge  Chair AAL 93",
+        "price": "$659.55"
+    },
+    {
+        "image": "./imgs/items/item3.jpg",
+        "text": "Activate Facial Mask and Charcoal Soap",
+        "price": "$ 129.55"
+    }
+    {
+        "image": "./imgs/items/item1.jpg",
+        "text": "Hay - About A Lounge  Chair AAL 93",
+        "price": "$659.55"
+    },
+    {
+        "image": "./imgs/items/item4.jpg",
+        "text": "Activate Facial Mask and Charcoal Soap",
+        "price": "$ 129.55"
+    }
+]
