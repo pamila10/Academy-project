@@ -1,4 +1,4 @@
 node_modules
 src
-package.json
+*.json
 gulpfile.js
