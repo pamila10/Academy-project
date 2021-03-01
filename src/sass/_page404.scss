@@ -1,0 +1,96 @@
+.not-found {
+  font-family: "Lato", sans-serif;
+  color: $black;
+  .wrap {
+    background-color: #f1edea;
+    padding-bottom: 40px;
+  }
+  .not-found-block {
+    display: flex;
+    align-items: center;
+    background: url("../imgs/exclamation-mark.png") no-repeat;
+    background-position: -45px;
+    background-color: white;
+    padding-bottom: 60px;
+    .oops {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      p {
+        font-weight: 800;
+        font-size: 113px;
+        color: $green;
+      }
+    }
+    .text-block {
+      width: 670px;
+      h3 {
+        font-weight: 800;
+        font-size: 24px;
+        padding-top: 70px;
+        &:nth-child(1) {
+          padding-bottom: 30px;
+        }
+        &:nth-child(5) {
+          padding-bottom: 20px;
+        }
+      }
+      .text {
+        font-weight: 400;
+        font-size: 16px;
+        &:nth-child(2) {
+          padding-bottom: 20px;
+        }
+      }
+      a {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 16px;
+        color: $green;
+        cursor: pointer;
+        padding-top: 45px;
+      }
+      .search-field {
+        position: relative;
+        color: $black;
+        input {
+          box-sizing: border-box;
+          width: 570px;
+          height: 40px;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-weight: 400;
+          font-size: 14px;
+          border: 2px solid #e8e2d6;
+          border-radius: 25px;
+          outline: none;
+
+          &::placeholder {
+            text-transform: uppercase;
+          }
+        }
+        button {
+          position: relative;
+          top: 0;
+          right: 40px;
+          font-size: 16px;
+          height: 40px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background-color: transparent;
+          i {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+.title.nfd {
+  &::before,
+  &::after {
+    background-color: #e5e2df;
+  }
+}

@@ -1,0 +1,130 @@
+footer {
+  background-color: white;
+  color: $black;
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    .contacts {
+      width: 20%;
+      margin-right: 5%;
+      .copyright-block {
+        padding-bottom: 35px;
+      }
+      .contact-block {
+        h3 {
+          font-size: 13px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-bottom: 10px;
+          i {
+            display: none;
+          }
+        }
+        .contact-details {
+          .phone,
+          .phone a {
+            color: $black;
+            &:hover {
+              color: $green;
+            }
+          }
+          .email {
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+          .email,
+          .email a {
+            color: $black;
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+    .categories-block {
+      width: 45%;
+      margin-right: 5%;
+      .break {
+        flex-basis: 100%;
+        width: 0;
+      }
+      li {
+        list-style-type: none;
+      }
+      .dropbtn-categories {
+        margin-bottom: 25px;
+        border: none;
+        background-color: transparent;
+        span {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        i {
+          display: none;
+        }
+      }
+      .dropdown-categories-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 245px;
+        a {
+          display: inline-block;
+          color: #b2b2b2;
+          padding-bottom: 15px;
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+    .about-block {
+      width: 8%;
+      margin-right: 2%;
+      .dropbtn-about {
+        border: none;
+        background-color: transparent;
+        margin-bottom: 25px;
+        span {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        i {
+          display: none;
+        }
+      }
+      .dropdown-about-content {
+        a {
+          display: inline-block;
+          padding-bottom: 15px;
+          color: #b2b2b2;
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+    .social-block {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 15%;
+      a {
+        padding-left: 20px;
+        color: #b2b2b2;
+        font-size: 18px;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+@import "cookies";

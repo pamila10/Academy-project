@@ -1,0 +1,432 @@
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #f3f0ea;
+  }
+  .logo-block {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    height: 78px;
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 63px;
+        height: 65px;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        font-weight: 800;
+        font-size: 31.65px;
+        color: #011847;
+        padding-left: 10px;
+        letter-spacing: 5px;
+        span {
+          display: block;
+          font-family: "Lato", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: #84bc22;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+
+  .hamburger-button {
+    display: none;
+    width: 18px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 999;
+    overflow: hidden;
+    outline: none;
+    transition: 0.4s;
+    span {
+      display: block;
+      position: absolute;
+      background-color: $black;
+      height: 2px;
+      width: 18px;
+      top: 15px;
+      &::after,
+      &::before {
+        display: block;
+        position: absolute;
+        background-color: $black;
+        height: 2px;
+        width: 18px;
+        content: "";
+      }
+      &::after {
+        bottom: 5px;
+      }
+      &::before {
+        top: 5px;
+      }
+    }
+  }
+  .hamburger-button-line {
+    span {
+      &::after {
+        transition: transform 0.2s ease-in, bottom 0.2s linear 0.2s;
+      }
+      &::before {
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+      }
+    }
+  }
+  .navbar-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+    margin-right: 30px;
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .dropdown-block {
+        .dropbtn {
+          margin-top: 13px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background-color: transparent;
+          font-family: "Lato", sans-serif;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 14px;
+          color: #5e534a;
+          padding: 15px 10px 28px 20px;
+          background-image: url("../imgs/icons/caret-down.png");
+          background-repeat: no-repeat;
+          background-position: 100px 20px;
+          span {
+            display: inline-block;
+            padding-right: 20px;
+          }
+          i {
+            display: none;
+          }
+        }
+        .dropdown-content {
+          display: none;
+          position: fixed;
+          top: 78px;
+          left: 0;
+          z-index: 100;
+          background-color: $black;
+          padding-top: 55px;
+          padding-bottom: 50px;
+          width: 100%;
+          .wrap {
+            align-items: flex-start;
+            background-color: inherit;
+            border-bottom: none;
+            .dropbtn-categories,
+            .dropbtn-sale {
+              span {
+                font-family: "Lato", sans-serif;
+                font-weight: 800;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: white;
+                padding-bottom: 6px;
+              }
+              i {
+                display: none;
+              }
+              border: none;
+              background-color: transparent;
+            }
+            .dropdown-categories-content,
+            .dropdown-sale-content {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              height: 255px;
+              a {
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                text-transform: none;
+                color: white;
+                display: inline-block;
+                padding-top: 13.5px;
+                &:hover {
+                  color: $green;
+                }
+              }
+            }
+            .categories-block {
+              width: 60%;
+            }
+            .sale-block {
+              width: 17%;
+            }
+            .nav-img {
+              width: 23%;
+              img {
+                width: 270px;
+                height: 276px;
+                object-fit: cover;
+                border-radius: 2%;
+              }
+            }
+          }
+        }
+      }
+      a {
+        font-family: "Lato", sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        color: #5e534a;
+        &:hover {
+          color: #84bc22;
+        }
+        i {
+          display: none;
+        }
+      }
+      .nav-img-outer {
+        display: none;
+      }
+    }
+    .dropdown-block:hover .dropbtn {
+      background-color: $black;
+      color: white;
+      border-bottom: 3px solid #84bc22;
+      margin-top: 15px;
+    }
+    .dropdown-block:hover .dropdown-content {
+      display: block;
+    }
+    form {
+      p {
+        position: relative;
+        padding-bottom: 2px;
+        select {
+          width: 40px;
+          appearance: none;
+          font-family: "Lato", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          border: none;
+          text-transform: uppercase;
+          background-color: transparent;
+          color: #b1b0b0;
+          outline: none;
+          cursor: pointer;
+          background-image: url("../imgs/icons/caret-down.png");
+          background-repeat: no-repeat;
+          background-position: center right;
+          &:hover {
+            color: $green;
+          }
+          option {
+            color: #b1b0b0;
+          }
+        }
+      }
+    }
+    .currency-form {
+      p {
+        select {
+          width: 47px;
+        }
+      }
+    }
+  }
+}
+
+.icons-block {
+  display: flex;
+  justify-content: space-between;
+  width: 22%;
+  .search-block {
+    .search-button {
+      border: none;
+      background-color: transparent;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      outline: none;
+      span {
+        color: #b1b0b0;
+        font-size: 25px;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+  .login-block {
+    .login-btn {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      background-position: -156px 1px;
+      cursor: pointer;
+      span {
+        color: #b1b0b0;
+        font-size: 25px;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+    .login-modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .modal-content {
+      box-sizing: border-box;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin: 8% auto;
+      background-color: white;
+      padding: 50px;
+      padding-bottom: 45px;
+      border-radius: 5px;
+      width: 500px;
+      h3 {
+        font-family: "Lato", sans-serif;
+        font-weight: 800;
+        font-size: 30px;
+        color: $black;
+        padding-bottom: 35px;
+      }
+      label {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        span {
+          font-family: "Lato", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          color: $black;
+        }
+      }
+      label[for="passField"] {
+        span:nth-child(2) {
+          color: $green;
+        }
+      }
+      input {
+        box-sizing: border-box;
+        height: 35px;
+        border: 2px solid #d7d7d7;
+        border-radius: 25px;
+        width: 400px;
+        outline: none;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      input:valid {
+        border-color: $green;
+      }
+      .pass-block {
+        position: relative;
+      }
+      .show-pass-btn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        border: none;
+        color: #d7d7d7;
+        background-color: transparent;
+        outline: none;
+        font-size: 18px;
+        &:hover {
+          color: $green;
+        }
+      }
+      .login-btn {
+        width: 185px;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 25px;
+        background-color: $green;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+      }
+      a {
+        padding-top: 20px;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: $green;
+      }
+    }
+  }
+
+  p {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    span {
+      color: #b1b0b0;
+      font-size: 25px;
+      &:hover {
+        color: $green;
+      }
+    }
+    .wish-circle,
+    .cart-circle {
+      width: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 17px;
+      position: absolute;
+      top: -9px;
+      left: 19px;
+      border: 2px solid #84bc22;
+      border-radius: 50%;
+      color: #84bc22;
+      background-color: white;
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  .wish-list {
+    background-position: -184px 1px;
+    cursor: pointer;
+  }
+  .mini-cart {
+    background-position: -124px 1px;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+}

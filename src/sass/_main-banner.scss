@@ -1,0 +1,176 @@
+.banners-block {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 28px;
+  .owl-carousel {
+    width: 74%;
+    margin-bottom: 20px;
+    .owl-dots {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      position: absolute;
+      bottom: 45px;
+      left: calc(50% - 62px);
+      .owl-dot:focus {
+        outline: none;
+      }
+      .owl-dot.active span,
+      .owl-dot:hover span {
+        background: transparent;
+        border: 3px solid white;
+      }
+    }
+    .item {
+      border-radius: 5px;
+      color: white;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      background-position: center;
+      h1 {
+        font-family: "MyriadPro", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        padding-top: 70px;
+        padding-bottom: 105px;
+        width: 75%;
+        margin: 0;
+      }
+      p {
+        padding-bottom: 44px;
+        width: 42%;
+      }
+      p,
+      a {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      a {
+        display: inline-block;
+        color: white;
+        text-transform: uppercase;
+        border: 1px solid #96bbc6;
+        border-radius: 25px;
+        padding: 13px 30px;
+        margin-bottom: 100px;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+    .first-item {
+      background-image: url("../imgs/bg1.jpg");
+      text-align: left;
+      padding-left: 55px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .second-item {
+      background-image: url("../imgs/bg2.jpg");
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .third-item {
+      background-image: url("../imgs/bg3.jpg");
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      h1,
+      p {
+        padding-right: 65px;
+      }
+      a {
+        margin-right: 65px;
+      }
+    }
+  }
+  .banner-sale {
+    width: 23%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .banner-summer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url("../imgs/holidays.jpg");
+      background-repeat: no-repeat;
+      object-fit: cover;
+      background-position: center;
+      width: 270px;
+      height: 334px;
+      border-radius: 5px;
+      span {
+        font-family: "Lato", sans-serif;
+        font-weight: 800;
+        font-size: 100px;
+        text-align: center;
+        color: white;
+        padding-bottom: 65px;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+    .text-fb {
+      p {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        color: $black;
+        text-align: center;
+        padding: 0 20px;
+      }
+      p:nth-child(1) {
+        font-size: 18px;
+        padding-top: 40px;
+        padding-bottom: 15px;
+      }
+      p:nth-child(2) {
+        font-size: 13px;
+        padding-bottom: 30px;
+      }
+    }
+    .button-fb {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      border: 1px solid #3a5b96;
+      border-radius: 25px;
+      padding: 6px 0;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      cursor: pointer;
+      span {
+        color: white;
+        margin-right: 15px;
+        color: #3a5b96;
+      }
+      a {
+        text-transform: uppercase;
+        color: #3a5b96;
+      }
+    }
+    .button-fb:hover {
+      background-color: #3a5b96;
+      span,
+      a {
+        color: white;
+      }
+    }
+  }
+}

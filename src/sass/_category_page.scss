@@ -1,0 +1,128 @@
+.filters {
+  .wrap {
+    background-color: #f2edea;
+  }
+  .filter-block {
+    font-weight: 400;
+    font-size: 14px;
+    color: $black;
+    .toggle-filter {
+      display: none;
+      margin: 0 auto;
+      font-size: 13px;
+      border: none;
+      background-color: transparent;
+      color: $green;
+    }
+    .filter-form-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 30px;
+      background-color: white;
+    }
+    form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+      width: 270px;
+      &:nth-child(2) {
+        margin-right: 7%;
+        margin-left: 7%;
+      }
+      select {
+        width: 200px;
+        padding: 8px 20px;
+        border: 2px solid #a2a09e;
+        border-radius: 25px;
+        background-image: url(../imgs/icons/caret-down.png);
+        background-repeat: no-repeat;
+        background-position: 170px center;
+        outline: none;
+        appearance: none;
+        cursor: pointer;
+        option {
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+    .color-form {
+      .color-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+      }
+      button {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: none;
+      }
+      .white {
+        background-color: white;
+        border: 3px solid #3d402f;
+        width: 20px;
+        height: 20px;
+      }
+      .light-blue {
+        background-color: #43c0cf;
+      }
+      .black {
+        background-color: #3d402f;
+      }
+      .green {
+        background-color: #4aaf00;
+      }
+      .blue {
+        background-color: #315bbd;
+      }
+      .orange {
+        background-color: #ec6115;
+      }
+      .red {
+        background-color: #dc041d;
+      }
+      .gray {
+        background-color: #efead7;
+      }
+    }
+  }
+  .products {
+    h3 {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      color: $black;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .product-item {
+      .text-block {
+        align-items: center;
+        flex-direction: column;
+        .text {
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+      }
+    }
+    .load-items-block {
+      .load-items-button {
+        width: 153px;
+        margin-top: 90px;
+        margin-bottom: 77px;
+        background-color: $green;
+        span {
+          padding-right: 0;
+        }
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Regular'), local('Lato-Regular'), 
+  url('../fonts/lato/latoregular/latoregular.woff2') format('woff2'), 
+  url('../fonts/lato/latoregular/latoregular.woff') format('woff'), 
+  url('../fonts/lato/latoregular/latoregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Bold'), local('Lato-Bold'), 
+  url('../fonts/lato/latobold/latobold.woff2') format('woff2'), 
+  url('../fonts/lato/latobold/latobold.woff') format('woff'), 
+  url('../fonts/lato/latobold/latobold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Heavy'), local('Lato-Heavy'), 
+  url('../fonts/lato/latoheavy/latoheavy.woff2') format('woff2'), 
+  url('../fonts/lato/latoheavy/latoheavy.woff') format('woff'), 
+  url('../fonts/lato/latoheavy/latoheavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: local('MyriadPro Regular'), local('MyriadPro-Regular'), 
+	url('../fonts/myriadpro/myriadpro-regular/myriadpro-regular.woff2') format('woff2'),
+	url('../fonts/myriadpro/myriadpro-regular/myriadpro-regular.woff') format('woff'),
+  url('../fonts/myriadpro/myriadpro-regular/myriadpro-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: local('MyriadPro Bold'), local('MyriadPro-Bold'),
+	url('../fonts/myriadpro/myriadpro-bold/myriadpro-bold.woff2') format('woff2'),
+	url('../fonts/myriadpro/myriadpro-bold/myriadpro-bold.woff') format('woff'),
+  url('../fonts/myriadpro/myriadpro-bold/myriadpro-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
