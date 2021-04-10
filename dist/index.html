@@ -1,1 +1,667 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"><link rel="stylesheet" href="./css/libs.min.css"><link rel="stylesheet" href="./css/styles.min.css"></head><body><header><div class="container"><div class="wrap"><div class="logo-block"><a href="index.html"><img src="./imgs/logo.png" alt="logo"><p>OSF<span>Academy</span></p></a></div><div class="navbar-block"><button class="hamburger-button hamburger-button-line"><span></span></button><div class="navbar"><div class="dropdown-block"><button class="dropbtn" id="dropbtn"><span>Services</span> <i class="fas fa-caret-up"></i> <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><div class="wrap"><div class="categories-block"><button class="dropbtn-categories"><span>Product categories</span> <i class="fas fa-caret-up"></i> <i class="fas fa-caret-down"></i></button><div class="dropdown-categories-content"><a href="page404.html">Accessories</a> <a href="page404.html">Alcohol</a> <a href="page404.html">Art</a> <a href="page404.html">Books</a> <a href="page404.html">Drink</a> <a href="page404.html">Electronics</a> <a href="page404.html">Flowers & Plant</a> <a href="page404.html">Food</a> <a href="page404.html">Gadgets</a> <a href="page404.html">Garden</a> <a href="page404.html">Grocery</a> <a href="page404.html">Home</a> <a href="page404.html">Jewelry</a> <a href="page404.html">Kids & Baby</a> <a href="page404.html">Men's Fashion</a> <a href="page404.html">Mobile</a> <a href="page404.html">Motorcycles</a> <a href="page404.html">Movies</a> <a href="page404.html">Music</a> <a href="page404.html">Office</a> <a href="page404.html">Pets</a> <a href="page404.html">Romantic</a> <a href="page404.html">Sport</a> <a href="page404.html">Toys</a></div></div><div class="sale-block"><button class="dropbtn-sale"><span>Sale</span> <i class="fas fa-caret-up"></i> <i class="fas fa-caret-down"></i></button><div class="dropdown-sale-content"><a href="page404.html">Accessories</a> <a href="page404.html">Alcohol</a> <a href="page404.html">Art</a> <a href="page404.html">Books</a> <a href="page404.html">Drink</a> <a href="page404.html">Electronics</a> <a href="page404.html">Flowers & Plant</a> <a href="page404.html">Food</a></div></div><div class="nav-img"><img src="./imgs/girl.jpg" alt="image"></div></div></div></div><a href="#">Company <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></a> <a href="#">Library <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></a> <a href="#">Contact us <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></a><div class="nav-img-outer"><img src="./imgs/girl.jpg" alt="image"></div><form method="get" class="language-form" id="languageForm"><p><select size="1" name="language"><option value="en" selected="selected">en</option><option value="ua">ua</option><option value="ro">ro</option></select></p></form><form method="get" class="currency-form" id="currencyForm"><p><select size="1" name="currency"><option value="en" selected="selected">$us</option><option value="ua">₴ua</option><option value="ro">RON</option></select></p></form></div></div><div class="icons-block"><div class="search-block"><button type="button" class="search-button"><span class="fas fa-search"></span></button></div><div class="login-block"><button id="loginBtn" class="login-btn"><span class="far fa-user"></span></button><div id="loginModal" class="login-modal"><form class="modal-content"><h3>Sign in</h3><label for="email"><span>Email</span></label> <input type="email" name="email" id="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{1,}[.]{1}[a-zA-Z]{2,}" required> <label for="passField"><span>Lato</span> <span>forgot password</span></label><div class="pass-block"><input type="password" name="pass" id="passField" minlength="6" pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,}" required> <button type="button" class="show-pass-btn" id="passBtn"><i class="far fa-eye"></i></button></div><button type="submit" class="login-btn">Login</button> <a href="#">I don’t have an account</a></form></div></div><div class="wish-list-block"><p class="wish-list"><span class="far fa-heart"></span> <span class="wish-circle" id="wishCounts">0</span></p></div><div class="mini-cart-block"><p class="mini-cart"><span class="fas fa-shopping-bag"></span> <span class="cart-circle" id="cartCounts"></span></p></div></div></div></div></header><div class="main-banner"><div class="container"><div class="wrap"><div class="banners-block"><div class="owl-carousel owl-theme" id="bannerCarousel"><div class="item first-item"><h1>Control and manage any device with cloud solutions</h1><p>Improve business performance and the user experience with the right mix of IoT technology and processes</p><a href="category.html">View More</a></div><div class="item second-item"><h1>Control and manage any device with cloud solutions</h1><p>Improve business performance and the user experience with the right mix of IoT technology and processes</p><a href="category.html">View More</a></div><div class="item third-item"><h1>Control and manage any device with cloud solutions</h1><p>Improve business performance and the user experience with the right mix of IoT technology and processes</p><a href="category.html">View More</a></div><div class="item first-item"><h1>Control and manage any device with cloud solutions</h1><p>Improve business performance and the user experience with the right mix of IoT technology and processes</p><a href="category.html">View More</a></div><div class="item second-item"><h1>Control and manage any device with cloud solutions</h1><p>Improve business performance and the user experience with the right mix of IoT technology and processes</p><a href="category.html">View More</a></div></div><div class="banner-sale"><div class="banner-summer"><span>55%</span><p>summer</p><p>sales</p></div><div class="text-fb"><p>Follow us on Facebook</p><p>Sed ut perspiciatis unde omnis iste natus error sit</p><div class="button-fb"><span class="fab fa-facebook-f"></span> <a href="https://www.facebook.com/OSFDigital/" target="_blank">Follow</a></div></div></div></div></div></div></div><div class="products"><div class="container"><div class="wrap"><div class="title"><h2>Popular Items</h2></div><div class="list-items" id="productsItems"><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item1.jpg" alt="item"></div><div class="text-block"><span class="text">Kristina Dam Oak Table With White Marble Top</span> <span class="price">$ 799.55</span></div></div><div class="product-item item-buy"><div class="img-block"><a href="product-page.html"><img src="./imgs/items/item2.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Hay - About A Lounge Chair AAL 93</span></a><div class="price-block"><a href="product-page.html"><span class="price">$659.55</span></a><div class="line"></div><button class="plus-button">Buy now</button></div></div></div><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item3.jpg" alt="item"></div><div class="text-block"><span class="text">Activate Facial Mask and Charcoal Soap</span> <span class="price">$ 129.55</span></div></div><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item4.jpg" alt="item"></div><div class="text-block"><span class="text">Cocktail Table Walnut | YES</span> <span class="price">$ 299.99</span></div></div><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item5.jpg" alt="item"></div><div class="text-block"><span class="text">Hay - About A Lounge Chair AAL 93</span> <span class="price">$ 659.55</span></div></div><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item6.jpg" alt="item"></div><div class="text-block"><span class="text">TORY DESK CALENDAR</span> <span class="price">$ 410.99</span></div></div><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item7.jpg" alt="item"></div><div class="text-block"><span class="text">CH445 Wing Chair on SUITE NY</span> <span class="price">$ 330.55</span></div></div><div class="product-item item-chat"><div class="text-block"><span class="text">My dragons are misbehaving again. Unbelieveable!</span> <span class="time">5h ago</span></div></div></div><div class="load-items-block"><button class="load-items-button" id="loadItems"><span>load more</span> <i class="fas fa-redo-alt"></i></button></div><div class="owl-carousel owl-theme" id="productsCarousel"><div class="item"><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item1.jpg" alt="item"></div><div class="text-block"><span class="text">Kristina Dam Oak Table With White Marble Top</span> <span class="price">$ 799.55</span></div></div></div><div class="item"><div class="product-item item-buy"><div class="img-block"><a href="product-page.html"><img src="./imgs/items/item2.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Hay - About A Lounge Chair AAL 93</span></a><div class="price-block"><a href="product-page.html"><span class="price">$659.55</span></a><div class="line"></div><button>Buy now</button></div></div></div></div><div class="item"><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item3.jpg" alt="item"></div><div class="text-block"><span class="text">Activate Facial Mask and Charcoal Soap</span> <span class="price">$ 129.55</span></div></div></div><div class="item"><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item4.jpg" alt="item"></div><div class="text-block"><span class="text">Cocktail Table Walnut | YES</span> <span class="price">$ 299.99</span></div></div></div><div class="item"><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item5.jpg" alt="item"></div><div class="text-block"><span class="text">Hay - About A Lounge Chair AAL 93</span> <span class="price">$ 659.55</span></div></div></div><div class="item"><div class="product-item hover"><div class="buttons-block"><button class="plus-button"><i class="fas fa-plus"></i></button> <button class="heart-button"><i class="fas fa-heart"></i></button></div><div class="img-block"><img src="./imgs/items/item6.jpg" alt="item"></div><div class="text-block"><span class="text">TORY DESK CALENDAR</span> <span class="price">$ 410.99</span></div></div></div></div></div></div></div><div class="static-banner"><div class="container"><div class="wrap"><div class="banner-block"><h2>Banner OSF Theme</h2><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p></div></div></div></div><div class="featured-products"><div class="container"><div class="wrap"><div class="featured-title"><h2>Featured Products</h2><span class="text">Unde omnis iste natus error sit voluptatem</span></div><div class="items-carousel"><div class="arrows-block"><span>///</span></div><div class="owl-carousel owl-theme" id="itemsCarousel"><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto1.jpg" alt="item"></a></div><div class="text-block"><a href=""><span class="text">Kristina Dam Oak Table With White Marble</span></a> <span>Awesome</span></div></div><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto2.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Kristina Dam Oak Table With White Marble</span></a> <span>Marketing</span></div></div><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto3.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Kristina Dam Oak Table With White Marble</span></a> <span>Awesome</span></div></div><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto4.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Hezy Theme</span></a> <span>Marketing</span></div></div><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto1.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Kristina Dam Oak Table With White Marble</span></a> <span>Awesome</span></div></div><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto2.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Kristina Dam Oak Table With White Marble</span></a> <span>Marketing</span></div></div><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto3.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Kristina Dam Oak Table With White Marble</span></a> <span>Awesome</span></div></div><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto4.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Hezy Theme</span></a> <span>Marketing</span></div></div><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto1.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Kristina Dam Oak Table With White Marble</span></a> <span>Awesome</span></div></div><div class="item"><div class="img-block"><a href="product-page.html"><img src="./imgs/foto2.jpg" alt="item"></a></div><div class="text-block"><a href="product-page.html"><span class="text">Kristina Dam Oak Table With White Marble</span></a> <span>Marketing</span></div></div></div></div></div></div></div><div class="services"><div class="container"><div class="wrap"><div class="items-block"><div class="item"><div class="img-block"><img src="./imgs/icons/focus.png" alt="image"></div><div class="text-block"><h3>Focus</h3><span>Our unwavering focus on superior service delivery and building next generation competencies</span></div></div><div class="item"><div class="img-block"><img src="./imgs/icons/method.png" alt="image"></div><div class="text-block"><h3>Method</h3><span>A standardized methodology designed to deliver measurable business results and predictable costs</span></div></div><div class="item"><div class="img-block"><img src="./imgs/icons/knowledge.png" alt="image"></div><div class="text-block"><h3>Knowledge</h3><span>A highly skilled, proactive workforce that reliably improves each client’s ROI while mitigating their business risk</span></div></div></div></div></div></div><footer><div class="container"><div class="wrap"><div class="contact-info"><div class="contacts"><div class="copyright-block"><p class="text">© Copyright <span class="year" id="year"></span>.</p><p class="text">All Rights Reserved.</p></div><div class="contact-block"><h3 class="dropdown">Contact <i class="fas fa-caret-down"></i> <i class="fas fa-caret-up"></i></h3><div class="contact-details"><div><p>Headquarters:</p><span>5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6</span></div><p class="email"><a href="mailto:contact@osf-global.com">contact@osf-global.com</a></p><p class="phone"><a href="tel:+18885484344">+1 (888) 548-4344</a></p></div></div></div><div class="categories-block"><button class="dropbtn-categories dropdown"><span>Categories</span> <i class="fas fa-caret-down"></i> <i class="fas fa-caret-up"></i></button><div class="dropdown-categories-content"><a href="page404.html">Alcohol</a> <a href="page404.html">Art</a> <a href="page404.html">Books</a> <a href="page404.html">Drink</a> <a href="page404.html">Electronics</a> <a class="break"></a> <a href="page404.html">Home</a> <a href="page404.html">Jewelry</a> <a href="page404.html">Kids & Baby</a> <a href="page404.html">Men's Fashion</a> <a href="page404.html">Mobile</a> <a href="page404.html">Motorcycles</a> <a href="page404.html">Movies</a> <a href="page404.html">Music</a> <a class="break"></a> <a href="page404.html">Sport</a> <a href="page404.html">Toys</a> <a href="page404.html">Travel</a> <a href="page404.html">Women's Fashion</a></div></div><div class="about-block"><button class="dropbtn-about dropdown"><span>About</span> <i class="fas fa-caret-down"></i> <i class="fas fa-caret-up"></i></button><div class="dropdown-about-content"><a href="page404.html">About us</a> <a href="page404.html">Delivery</a> <a href="page404.html">Testimonials</a> <a href="page404.html">Contact</a></div></div><div class="social-block"><a href="https://www.facebook.com/OSFDigital/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-google-plus-g" target="_blank"></i></a> <a href="https://twitter.com/osfdigital" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-pinterest-p" target="_blank"></i></a></div></div><div class="cookies" id="cookies"><div class="cookies-block"><div class="text-block"><h3>This website uses cookies</h3><p class="text">OSF uses its own and third-party cookies for statistical purposes, to know your preferences, for website performance and interaction with social media offering publicity tailored to your interests. If you continue browsing, we consider that you accept its use. You can expand this information consulting our <a href="#">Cookies Policy Page.</a></p></div><div class="buttons-block"><button type="button" class="close-cookies"><i class="fas fa-times"></i></button> <button type="button" class="accept-cookies">Accept</button></div></div></div></div></div></footer><script src="./js/libs.min.js"></script><script src="./js/scripts.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/libs.min.css" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="wrap">
+          <div class="logo-block">
+            <a href="index.html">
+              <img src="./imgs/logo.png" alt="logo">
+              <p>OSF<span>Academy</span></p>
+            </a>
+          </div>
+          <div class="navbar-block">
+            <button class="hamburger-button hamburger-button-line">
+              <span></span>
+            </button>
+            <div class="navbar">
+              <div class="dropdown-block">
+                <button class="dropbtn" id="dropbtn">
+                  <span>Services</span>
+                  <i class="fas fa-caret-up"></i>
+                  <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <div class="wrap">
+                    <div class="categories-block">
+                      <button class="dropbtn-categories">
+                        <span>Product categories</span>
+                        <i class="fas fa-caret-up"></i>
+                        <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-categories-content">
+                        <a href="page404.html">Accessories</a>
+                        <a href="page404.html">Alcohol</a>
+                        <a href="page404.html">Art</a>
+                        <a href="page404.html">Books</a>
+                        <a href="page404.html">Drink</a>
+                        <a href="page404.html">Electronics</a>
+                        <a href="page404.html">Flowers & Plant</a>
+                        <a href="page404.html">Food</a>
+                        <a href="page404.html">Gadgets</a>
+                        <a href="page404.html">Garden</a>
+                        <a href="page404.html">Grocery</a>
+                        <a href="page404.html">Home</a>
+                        <a href="page404.html">Jewelry</a>
+                        <a href="page404.html">Kids & Baby</a>
+                        <a href="page404.html">Men's Fashion</a>
+                        <a href="page404.html">Mobile</a>
+                        <a href="page404.html">Motorcycles</a>
+                        <a href="page404.html">Movies</a>
+                        <a href="page404.html">Music</a>
+                        <a href="page404.html">Office</a>
+                        <a href="page404.html">Pets</a>
+                        <a href="page404.html">Romantic</a>
+                        <a href="page404.html">Sport</a>
+                        <a href="page404.html">Toys</a>
+                      </div>
+                    </div>
+                    <div class="sale-block">
+                      <button class="dropbtn-sale">
+                        <span>Sale</span>
+                        <i class="fas fa-caret-up"></i>
+                        <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-sale-content">
+                        <a href="page404.html">Accessories</a>
+                        <a href="page404.html">Alcohol</a>
+                        <a href="page404.html">Art</a>
+                        <a href="page404.html">Books</a>
+                        <a href="page404.html">Drink</a>
+                        <a href="page404.html">Electronics</a>
+                        <a href="page404.html">Flowers & Plant</a>
+                        <a href="page404.html">Food</a>
+                      </div>
+                    </div>
+                    <div class="nav-img"><img src="./imgs/girl.jpg" alt="image"></div>
+                  </div>
+                </div>
+              </div>
+              <a href="#">Company <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></a>
+              <a href="#">Library <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></a>
+              <a href="#">Contact us <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></a>
+              <div class="nav-img-outer"><img src="./imgs/girl.jpg" alt="image"></div>
+              <form method="get" class="language-form" id="languageForm">
+                <p>
+                  <select size="1" name="language">
+                    <option value="en" selected>en</option>
+                    <option value="ua">ua</option>
+                    <option value="ro">ro</option>
+                  </select>
+                </p>
+              </form>
+              <form method="get" class="currency-form" id="currencyForm">
+                <p>
+                  <select size="1" name="currency">
+                    <option value="en" selected>$us</option>
+                    <option value="ua">₴ua</option>
+                    <option value="ro">RON</option>
+                  </select>
+                </p>
+              </form>
+            </div>
+          </div>
+          
+          <div class="icons-block">
+            <div class="search-block">
+              <button type="button" class="search-button">
+                <span class="fas fa-search"></span>
+              </button>
+            </div>
+            <div class="login-block">
+              <button id="loginBtn" class="login-btn">
+                <span class="far fa-user"></span>
+              </button>
+              <div id="loginModal" class="login-modal">
+                <form class="modal-content">
+                  <h3>Sign in</h3>
+                  <label for="email"><span>Email</span></label>
+                  <input type="email" name="email" id="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{1,}[.]{1}[a-zA-Z]{2,}" required>
+                  <label for="passField">
+                    <span>Lato</span>
+                    <span>forgot password</span>
+                  </label>
+                  <div class="pass-block">
+                    <input type="password" name="pass" id="passField" minlength="6" pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+                    <button type="button" class="show-pass-btn" id="passBtn"><i class="far fa-eye"></i></button>
+                  </div>
+                  <button type="submit" class="login-btn">Login</button>
+                  <a href="#">I don’t have an account</a>
+                </form>
+              </div>
+            </div>
+            <div class="wish-list-block">
+              <p class="wish-list">
+                <span class="far fa-heart"></span>
+                <span class="wish-circle" id="wishCounts">0</span>
+              </p>
+            </div>
+            <div class="mini-cart-block">
+              <p class="mini-cart">
+                <span class="fas fa-shopping-bag"></span>
+                <span class="cart-circle" id="cartCounts"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-banner">
+      <div class="container">
+        <div class="wrap">
+          <div class="banners-block">
+            <div class="owl-carousel owl-theme" id="bannerCarousel">
+              <div class="item first-item">
+                <h1>Control and manage any device with cloud solutions</h1>
+                <p>Improve business performance and the user experience with the right mix of IoT technology and processes</p>
+                <a href="category.html">View More</a>
+              </div>
+              <div class="item second-item">
+                <h1>Control and manage any device with cloud solutions</h1>
+                <p>Improve business performance and the user experience with the right mix of IoT technology and processes</p>
+                <a href="category.html">View More</a>
+              </div>
+              <div class="item third-item">
+                <h1>Control and manage any device with cloud solutions</h1>
+                <p>Improve business performance and the user experience with the right mix of IoT technology and processes</p>
+                <a href="category.html">View More</a>
+              </div>
+              <div class="item first-item">
+                <h1>Control and manage any device with cloud solutions</h1>
+                <p>Improve business performance and the user experience with the right mix of IoT technology and processes</p>
+                <a href="category.html">View More</a>
+              </div>
+              <div class="item second-item">
+                <h1>Control and manage any device with cloud solutions</h1>
+                <p>Improve business performance and the user experience with the right mix of IoT technology and processes</p>
+                <a href="category.html">View More</a>
+              </div>
+            </div>
+            <div class="banner-sale">
+              <div class="banner-summer">
+                <span>55%</span>
+                <p>summer</p>
+                <p>sales</p>
+              </div>
+              <div class="text-fb">
+                <p>Follow us on Facebook</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit</p>
+                <div class="button-fb">
+                  <span class="fab fa-facebook-f"></span>
+                  <a href="https://www.facebook.com/OSFDigital/" target="_blank">Follow</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="products">
+      <div class="container">
+        <div class="wrap">
+          <div class="title">
+            <h2>Popular Items</h2>
+          </div>
+          <div class="list-items" id="productsItems">
+            <div class="product-item hover">
+              <div class="buttons-block">
+                <button class="plus-button"><i class="fas fa-plus"></i></button>
+                <button class="heart-button"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="img-block">
+                <img src="./imgs/items/item1.jpg" alt="item">
+              </div>
+              <div class="text-block">
+                <span class="text">Kristina Dam Oak Table With White Marble Top</span>
+                <span class="price">$ 799.55</span>
+              </div>
+            </div>
+            <div class="product-item item-buy">
+              <div class="img-block">
+                <a href="product-page.html"><img src="./imgs/items/item2.jpg" alt="item"></a>
+              </div>
+              <div class="text-block">
+                <a href="product-page.html"><span class="text">Hay - About A Lounge  Chair AAL 93</span></a>
+                <div class="price-block">
+                  <a href="product-page.html"><span class="price">$659.55</span></a>
+                  <div class="line"></div>
+                  <button class="plus-button">Buy now</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-item hover">
+              <div class="buttons-block">
+                <button class="plus-button"><i class="fas fa-plus"></i></button>
+                <button class="heart-button"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="img-block">
+                <img src="./imgs/items/item3.jpg" alt="item"> 
+              </div>
+              <div class="text-block">
+                <span class="text">Activate Facial Mask and Charcoal Soap</span>
+                <span class="price">$ 129.55</span>
+              </div>
+            </div>
+            <div class="product-item hover">
+              <div class="buttons-block">
+                <button class="plus-button"><i class="fas fa-plus"></i></button>
+                <button class="heart-button"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="img-block">
+                <img src="./imgs/items/item4.jpg" alt="item">
+              </div>
+              <div class="text-block">
+                <span class="text">Cocktail Table Walnut  | YES</span>
+                <span class="price">$ 299.99</span>
+              </div>
+            </div>
+            <div class="product-item hover">
+              <div class="buttons-block">
+                <button class="plus-button"><i class="fas fa-plus"></i></button>
+                <button class="heart-button"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="img-block">
+                <img src="./imgs/items/item5.jpg" alt="item">
+              </div>
+              <div class="text-block">
+                <span class="text">Hay - About A Lounge  Chair AAL 93</span>
+                <span class="price">$ 659.55</span>
+              </div>
+            </div>
+            <div class="product-item hover">
+              <div class="buttons-block">
+                <button class="plus-button"><i class="fas fa-plus"></i></button>
+                <button class="heart-button"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="img-block">
+                <img src="./imgs/items/item6.jpg" alt="item">
+              </div>
+              <div class="text-block">
+                <span class="text">TORY DESK CALENDAR</span>
+                <span class="price">$ 410.99</span>
+              </div>
+            </div>
+            <div class="product-item hover">
+              <div class="buttons-block">
+                <button class="plus-button"><i class="fas fa-plus"></i></button>
+                <button class="heart-button"><i class="fas fa-heart"></i></button>
+              </div>
+              <div class="img-block">
+                <img src="./imgs/items/item7.jpg" alt="item">
+              </div>
+              <div class="text-block">
+                <span class="text">CH445 Wing Chair on  SUITE NY</span>
+                <span class="price">$ 330.55</span>
+              </div>
+            </div>
+            <div class="product-item item-chat">
+              <div class="text-block">
+                <span class="text">My dragons are  misbehaving again. Unbelieveable!</span>
+                <span class="time">5h ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="load-items-block">
+            <button class="load-items-button" id="loadItems">
+              <span>load more</span>
+              <i class="fas fa-redo-alt"></i>
+            </button>
+          </div>
+          <div class="owl-carousel owl-theme" id="productsCarousel">
+            <div class="item">
+              <div class="product-item hover">
+                <div class="buttons-block">
+                  <button class="plus-button"><i class="fas fa-plus"></i></button>
+                  <button class="heart-button"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="img-block">
+                  <img src="./imgs/items/item1.jpg" alt="item">
+                </div>
+                <div class="text-block">
+                  <span class="text">Kristina Dam Oak Table With White Marble Top</span>
+                  <span class="price">$ 799.55</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item item-buy">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/items/item2.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Hay - About A Lounge  Chair AAL 93</span></a>
+                  <div class="price-block">
+                    <a href="product-page.html"><span class="price">$659.55</span></a>
+                    <div class="line"></div>
+                    <button>Buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item hover">
+                <div class="buttons-block">
+                  <button class="plus-button"><i class="fas fa-plus"></i></button>
+                  <button class="heart-button"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="img-block">
+                  <img src="./imgs/items/item3.jpg" alt="item"> 
+                </div>
+                <div class="text-block">
+                  <span class="text">Activate Facial Mask and Charcoal Soap</span>
+                  <span class="price">$ 129.55</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item hover">
+                <div class="buttons-block">
+                  <button class="plus-button"><i class="fas fa-plus"></i></button>
+                  <button class="heart-button"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="img-block">
+                  <img src="./imgs/items/item4.jpg" alt="item">
+                </div>
+                <div class="text-block">
+                  <span class="text">Cocktail Table Walnut  | YES</span>
+                  <span class="price">$ 299.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item hover">
+                <div class="buttons-block">
+                  <button class="plus-button"><i class="fas fa-plus"></i></button>
+                  <button class="heart-button"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="img-block">
+                  <img src="./imgs/items/item5.jpg" alt="item">
+                </div>
+                <div class="text-block">
+                  <span class="text">Hay - About A Lounge  Chair AAL 93</span>
+                  <span class="price">$ 659.55</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item hover">
+                <div class="buttons-block">
+                  <button class="plus-button"><i class="fas fa-plus"></i></button>
+                  <button class="heart-button"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="img-block">
+                  <img src="./imgs/items/item6.jpg" alt="item">
+                </div>
+                <div class="text-block">
+                  <span class="text">TORY DESK CALENDAR</span>
+                  <span class="price">$ 410.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="static-banner">
+      <div class="container">
+        <div class="wrap">
+          <div class="banner-block">
+            <h2>Banner OSF Theme</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-products">
+      <div class="container">
+        <div class="wrap">
+          <div class="featured-title">
+            <h2>Featured Products</h2>
+            <span class="text">Unde omnis iste natus error sit voluptatem</span>
+          </div>
+          <div class="items-carousel">
+            <div class="arrows-block"><span>///</span></div>
+            <div class="owl-carousel owl-theme" id="itemsCarousel">
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto1.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href=""><span class="text">Kristina Dam Oak Table  With White Marble</span></a>
+                  <span>Awesome</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto2.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Kristina Dam Oak Table  With White Marble</span></a>
+                  <span>Marketing</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto3.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Kristina Dam Oak Table  With White Marble</span></a>
+                  <span>Awesome</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto4.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Hezy Theme</span></a>
+                  <span>Marketing</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto1.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Kristina Dam Oak Table  With White Marble</span></a>
+                  <span>Awesome</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto2.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Kristina Dam Oak Table  With White Marble</span></a>
+                  <span>Marketing</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto3.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Kristina Dam Oak Table  With White Marble</span></a>
+                  <span>Awesome</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto4.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Hezy Theme</span></a>
+                  <span>Marketing</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto1.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Kristina Dam Oak Table  With White Marble</span></a>
+                  <span>Awesome</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-block">
+                  <a href="product-page.html"><img src="./imgs/foto2.jpg" alt="item"></a>
+                </div>
+                <div class="text-block">
+                  <a href="product-page.html"><span class="text">Kristina Dam Oak Table  With White Marble</span></a>
+                  <span>Marketing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container">
+        <div class="wrap">
+          <div class="items-block">
+            <div class="item">
+              <div class="img-block">
+                <img src="./imgs/icons/focus.png" alt="image">
+              </div>
+              <div class="text-block">
+                <h3>Focus</h3>
+                <span>Our unwavering focus on superior service delivery and building next generation competencies</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-block">
+                <img src="./imgs/icons/method.png" alt="image">
+              </div>
+              <div class="text-block">
+                <h3>Method</h3>
+                <span>A standardized methodology designed to deliver measurable business results and predictable costs</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-block">
+                <img src="./imgs/icons/knowledge.png" alt="image">
+              </div>
+              <div class="text-block">
+                <h3>Knowledge</h3>
+                <span>A highly skilled, proactive workforce that reliably improves each client’s ROI while mitigating their business risk</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="wrap">
+          <div class="contact-info">
+            <div class="contacts">
+              <div class="copyright-block">
+                <p class="text">© Copyright <span class="year" id="year"></span>.</p>
+                <p class="text">All Rights Reserved.</p>
+              </div>
+              <div class="contact-block">
+                <h3 class="dropdown">Contact
+                  <i class="fas fa-caret-down"></i>
+                  <i class="fas fa-caret-up"></i>
+                </h3>
+                <div class="contact-details">
+                  <div>
+                    <p>Headquarters:</p>
+                    <span>5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6</span>
+                  </div>
+                  <p class="email"><a href="mailto:contact@osf-global.com">contact@osf-global.com</a></p>
+                  <p class="phone"><a href="tel:+18885484344">+1 (888) 548-4344</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="categories-block">
+              <button class="dropbtn-categories dropdown">
+                <span>Categories</span>
+                <i class="fas fa-caret-down"></i>
+                <i class="fas fa-caret-up"></i>
+              </button>
+              <div class="dropdown-categories-content">
+                <a href="page404.html">Alcohol</a>
+                <a href="page404.html">Art</a>
+                <a href="page404.html">Books</a>
+                <a href="page404.html">Drink</a>
+                <a href="page404.html">Electronics</a>
+                <a class="break"></a>
+                <a href="page404.html">Home</a>
+                <a href="page404.html">Jewelry</a>
+                <a href="page404.html">Kids & Baby</a>
+                <a href="page404.html">Men's Fashion</a>
+                <a href="page404.html">Mobile</a>
+                <a href="page404.html">Motorcycles</a>
+                <a href="page404.html">Movies</a>
+                <a href="page404.html">Music</a>
+                <a class="break"></a>
+                <a href="page404.html">Sport</a>
+                <a href="page404.html">Toys</a>
+                <a href="page404.html">Travel</a>
+                <a href="page404.html">Women's Fashion</a>
+              </div>
+            </div>
+            <div class="about-block">
+              <button class="dropbtn-about dropdown">
+                <span>About</span>
+                <i class="fas fa-caret-down"></i>
+                <i class="fas fa-caret-up"></i>
+              </button>
+              <div class="dropdown-about-content">
+                <a href="page404.html">About us</a>
+                <a href="page404.html">Delivery</a>
+                <a href="page404.html">Testimonials</a>
+                <a href="page404.html">Contact</a>
+              </div>
+            </div>
+            <div class="social-block">
+              <a href="https://www.facebook.com/OSFDigital/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g" target="_blank"></i></a>
+              <a href="https://twitter.com/osfdigital" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p" target="_blank"></i></a>
+            </div>
+          </div>
+          <div class="cookies" id="cookies">
+              <div class="cookies-block">
+                <div class="text-block">
+                  <h3>This website uses cookies</h3>
+                  <p class="text">OSF uses its own and third-party cookies for statistical purposes, to know your preferences, for website performance 
+                    and interaction with social media offering publicity tailored to your interests. If you continue browsing, we consider that you accept its use. 
+                    You can expand this information consulting our <a href="#">Cookies Policy Page.</a>
+                  </p>
+                </div>
+                <div class="buttons-block">
+                  <button type="button" class="close-cookies"><i class="fas fa-times"></i></button>
+                  <button type="button" class="accept-cookies">Accept</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/scripts.min.js"></script>
+  </body>
+</html>
