@@ -3,12 +3,12 @@ header {
   width: 100%;
   top: 0;
   z-index: 100;
+  background-color: white;
+  border-bottom: 1px solid #f3f0ea;
   .wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    border-bottom: 1px solid #f3f0ea;
   }
   .logo-block {
     display: flex;

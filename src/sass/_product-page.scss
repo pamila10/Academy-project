@@ -1,7 +1,5 @@
 .product-detail {
-  .wrap {
-    background-color: #f1edea;
-  }
+  background-color: #f1edea;
   .product-detail-block {
     background-color: white;
     display: flex;
@@ -319,9 +317,7 @@
   }
 }
 .products.pdp {
-  .wrap {
-    background-color: #f1edea;
-  }
+  background-color: #f1edea;
   .title {
     &:before,
     &:after {
