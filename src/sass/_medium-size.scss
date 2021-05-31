@@ -12,6 +12,20 @@
     .navbar-block {
       width: 67%;
       margin-right: 3%;
+      .navbar {
+        .dropdown-block {
+          .dropdown-content {
+            .wrap {
+              .nav-img {
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   .banners-block {

@@ -56,56 +56,10 @@ $('#fullImgCarousel').owlCarousel({
     items: 1,
 });
 
-const loginModal = document.querySelector('#loginModal'),
-loginBtn = document.querySelector('#loginBtn'),
-passBtn = document.querySelector('#passBtn'),
-passField = document.querySelector('#passField');
-
-const cartCounts = document.querySelector('#cartCounts'),
-plusButton = document.querySelectorAll('.plus-button');
-
-const wishCounts = document.querySelector('#wishCounts'),
-heartButton = document.querySelectorAll('.heart-button');
-
-const year = document.querySelector('#year');
-
-const toggleFilter = document.querySelector('.toggle-filter'),
-formBlock = document.querySelector('.filter-form-block');
-
-const loadItems = document.querySelector('#loadItems'),
-productsItems = document.querySelector('#productsItems');
-
-const cookies = document.querySelector('#cookies'),
-closeCookiesBtn = document.querySelector('.close-cookies'),
-acceptCookiesBtn = cookies.querySelector('.accept-cookies');
-
-const readMoreBtn = document.querySelector('.read-more-btn'),
-readMore = document.querySelector('.read-more');
-
-const bigImg = document.querySelector('#bigImg'),
-smallImages = document.querySelector('#smallImages'),
-images = document.querySelectorAll('.small-image'),
-fullImgBtn = document.querySelector('#fullImgBtn'),
-fullImg = document.querySelector('#fullImg');
-
-const plusNum = document.querySelector('#plusNum'),
-minusNum = document.querySelector('#minusNum'),
-numField = document.querySelector('#numField'),
-addToCartBtn = document.querySelector('#addToCartBtn');
-
-const tabContent = document.querySelectorAll('.tab'),
-tabNav = document.querySelectorAll('.tabs-nav-item');
-
-const scrollBtn = document.querySelector('#scrollBtn');
-
-const pdpCarousel = document.querySelector('#pdpCarousel'),
-closeCarousel = document.querySelector('#closeCarousel'),
-carouselImgs = document.querySelectorAll('.small-carousel-images');
-
-const dropdown = document.querySelectorAll('.dropdown');
-
 // Toggle modal form
 function toggleModal() {
+    const loginModal = document.querySelector('#loginModal');
+    const loginBtn = document.querySelector('#loginBtn');
     // Open the modal 
     loginBtn.addEventListener('click', () => {
         loginModal.style.display = 'block';
@@ -128,15 +82,24 @@ function toggleModal() {
 toggleModal();
 // Show password
 function showPass() {
-    if (passField.type === "password") {
-        passField.type = "text";
-    } else {
-        passField.type = "password";
-    }
-}; 
-passBtn.addEventListener('click', showPass);
+    const passBtn = document.querySelector('#passBtn'),
+    passField = document.querySelector('#passField');
+    function isPassField() {
+        if (passField.type === "password") {
+            passField.type = "text";
+        } else {
+            passField.type = "password";
+        }
+    }; 
+    passBtn.addEventListener('click', isPassField);
+}
+showPass();
+
 // Add goods to cart
 function addToCart() {
+    const cartCounts = document.querySelector('#cartCounts'),
+    addToCartBtn = document.querySelector('#addToCartBtn'),
+    productsItems = document.querySelector('#productsItems');
     let clicksCount = 0;
     function initiateClicks() {
         let clickNum = localStorage.getItem('items');
@@ -174,6 +137,8 @@ function addToCart() {
 addToCart();
 // Add goods to wish-list
 function addToWish() {
+    const wishCounts = document.querySelector('#wishCounts'),
+    productsItems = document.querySelector('#productsItems');
     let hearts = 0;
     function initiateHearts() {
         let heartNum = localStorage.getItem('hearts');
@@ -199,19 +164,28 @@ function addToWish() {
 addToWish();
 // Get year
 function getYear() {
+    const year = document.querySelector('#year');
     let today = new Date();
     let yearAct= today.getFullYear();
     year.innerHTML = yearAct;
 }
 getYear();
 // Hide filter
-if (toggleFilter !== null) {
-    toggleFilter.addEventListener('click', () => {
-        formBlock.classList.toggle('hidden');
-    });
+function hideFilter() {
+    const toggleFilter = document.querySelector('.toggle-filter'),
+    formBlock = document.querySelector('.filter-form-block');
+    if (toggleFilter !== null) {
+        toggleFilter.addEventListener('click', () => {
+            formBlock.classList.toggle('hidden');
+        });
+    }
 }
+hideFilter();
+
 // Load more button
 function loadMoreBtn() {
+    const loadItems = document.querySelector('#loadItems'),
+    productsItems = document.querySelector('#productsItems');
     let num = 0;
     function addProducts(arg) {
         let block = '';
@@ -257,6 +231,9 @@ function loadMoreBtn() {
 loadMoreBtn();
 // Check cookies
 function checkCookies() {
+    const cookies = document.querySelector('#cookies'),
+    closeCookiesBtn = document.querySelector('.close-cookies'),
+    acceptCookiesBtn = cookies.querySelector('.accept-cookies');
     let cookieDate = localStorage.getItem('cookieDate');
   
     if (!cookieDate || (+cookieDate + 31536000000) < Date.now()){
@@ -273,6 +250,8 @@ function checkCookies() {
 let delay = setTimeout(checkCookies, 10000);
 // Read more
 function addReadMoreBtn() {
+    const readMoreBtn = document.querySelector('.read-more-btn'),
+    readMore = document.querySelector('.read-more');
     if (readMoreBtn !== null) {
         readMoreBtn.addEventListener('click', () => {
             if (readMore.style.display === 'inline') {
@@ -288,6 +267,9 @@ function addReadMoreBtn() {
 addReadMoreBtn();
 //  Thumbnails
 function addTumbs() {
+    const bigImg = document.querySelector('#bigImg'),
+    smallImages = document.querySelector('#smallImages'),
+    images = document.querySelectorAll('.small-image');
     for (let i = 0; i < images.length; i++) {
             images[i].addEventListener('click', function () {
             let current = document.querySelectorAll('.isActive');
@@ -307,6 +289,9 @@ function addTumbs() {
 addTumbs();
 // Pdp carousel
 function addCarouselTumbs() {
+    const bigImg = document.querySelector('#bigImg'),
+    pdpCarousel = document.querySelector('#pdpCarousel'),
+    carouselImgs = document.querySelectorAll('.small-carousel-images');
     for (let i = 0; i < carouselImgs.length; i++) {
         carouselImgs[i].addEventListener('click', function () {
             let current = pdpCarousel.querySelectorAll('.is-active');
@@ -326,6 +311,10 @@ function addCarouselTumbs() {
 addCarouselTumbs();
 // Toggle full image
 function toggleFullImg() {
+    const bigImg = document.querySelector('#bigImg'),
+    fullImgBtn = document.querySelector('#fullImgBtn'),
+    closeCarousel = document.querySelector('#closeCarousel'),
+    fullImg = document.querySelector('#fullImg');
     // Open full image
     if (fullImgBtn !== null) {
         fullImgBtn.addEventListener('click', () => {
@@ -353,6 +342,9 @@ function toggleFullImg() {
 toggleFullImg();
 // Add numeric field
 function countNumbers() {
+    const plusNum = document.querySelector('#plusNum'),
+    minusNum = document.querySelector('#minusNum'),
+    numField = document.querySelector('#numField');
     function addPlus() {
         numField.value = +numField.value + 1;
         if (numField.value.length > numField.max) {
@@ -382,6 +374,8 @@ function countNumbers() {
 countNumbers();
 // Tabs
 function addTabs() {
+    const tabContent = document.querySelectorAll('.tab'),
+    tabNav = document.querySelectorAll('.tabs-nav-item');
     let tabName;
     tabNav.forEach(item => {
         item.addEventListener('click', selectTabNav);
@@ -407,6 +401,8 @@ function addTabs() {
 addTabs();
 // Sroll button
 function scrollTop() { 
+    const scrollBtn = document.querySelector('#scrollBtn');
+    const plusNum = document.querySelector('#plusNum');
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -418,6 +414,7 @@ function scrollTop() {
 scrollTop();
 // Toggle contact info
 function toggleContacts() {
+    const dropdown = document.querySelectorAll('.dropdown');
     dropdown.forEach(item => {
         item.addEventListener('click', function() {
             this.nextElementSibling.classList.toggle('active');
